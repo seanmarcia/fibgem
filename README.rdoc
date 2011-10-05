@@ -1,19 +1,19 @@
 = fibgem
 
-Description goes here.
+An extremely simple gem to add functionality to Ruby's integer class.
 
-== Contributing to fibgem
+== Usage
  
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+This adds the command: closest_fibonacci
 
-== Copyright
+This command, in the spirit of the Price is Right, will find the number in the fibonacci sequence which
+is closest to the one entered but not higher.
 
-Copyright (c) 2011 Sean Marcia. See LICENSE.txt for
-further details.
+== Example
 
+ruby-1.9.2-p290 :001 > require 'fibgem'
+ => true 
+ruby-1.9.2-p290 :002 > 100.closest_fibonacci
+ => "The closest lower fibonacci number to 100 is 89" 
+ruby-1.9.2-p290 :003 > 5000.closest_fibonacci
+ => "The closest lower fibonacci number to 5000 is 4181"
