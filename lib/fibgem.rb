@@ -14,6 +14,6 @@ class Integer
         end
       end
     end
-    return "The closest lower fibonacci number to #{n} is #{lower}"
+    return "The closest fibonacci number to #{n} that is lower is #{lower}"
   end
 end
